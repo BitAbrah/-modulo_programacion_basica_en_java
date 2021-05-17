@@ -1,0 +1,16 @@
+_PROMEDIO DE NOTAS_
+
+Variables:
+Float A
+Float B
+Float C
+Float D
+
+Imrpimir: "ingrese 1ra nota" //Constante
+Leer A 
+Imrpimir: "ingrese 2da nota" //Constante
+Leer B
+Imprimir: "Ingrese 3ra nota" //Constante
+Leer C
+D = (A+B+C)/3
+Imprimir: "El promedio es: ", D

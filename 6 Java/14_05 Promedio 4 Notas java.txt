@@ -1,0 +1,16 @@
+package sumanumeros;
+import java.util.Scanner;
+public class PromedioNotas{
+
+    public static void main(String[] args) {
+    Scanner key = new Scanner(System.in);
+    float N,SUM=0;    
+        for (int i=1;i<=4;i++)
+        {
+            System.out.println("Ingrese Nota "+i);
+            N = key.nextFloat();
+            SUM=SUM+N;
+        }
+            System.out.println("El promedio de notas es: "+SUM/4);
+    }  
+}

@@ -1,0 +1,13 @@
+_SUMA 2 NUMEROS_
+
+Variables
+Int A=0
+Int B=0
+Int C=0
+
+Imrpimir: "ingrese 1er número" //Constante
+Leer A 
+Imrpimir: "ingrese 2do número" //Constante
+Leer B
+C = A+B
+Iprimir: "La suma de sus números es: " + C

@@ -1,0 +1,35 @@
+package paresimpares;
+import java.util.Scanner;
+public class ParesImpares {
+
+    public static void main(String[] args) {
+        int N=0;
+        int C=0;
+        int PARES_C=0;
+        int IMPARES_C=0;
+        int SUM_PARES=0;
+        int SUM_IMPARES=0;
+    Scanner key = new Scanner(System.in);
+        System.out.println("Ingrese cantidad de numeros a verificar");
+        C = key.nextInt();
+        for (int i=1;i<=C;i++)
+        {
+            System.out.println("Ingrese Numero "+i);
+            N = key.nextInt();
+            if (N%2==0) {
+                SUM_PARES=SUM_PARES+N;
+                PARES_C++;
+            }
+            if (N%2!=0)
+            {
+                SUM_IMPARES=SUM_IMPARES+N;
+                IMPARES_C++;
+            }
+            
+        }
+        System.out.println("Ingresó "+PARES_C+" Pares y su suma es: "+SUM_PARES);
+        System.out.println("");
+        System.out.println("Ingresó "+IMPARES_C+" Impares y su suma es: "+SUM_IMPARES);
+    }
+    
+}

@@ -1,0 +1,27 @@
+INT C
+INT EDAD
+INT MAYOR
+INT MENOR
+INT SUMA_EDADES
+FLOAT PROMEDIO
+
+Escribir: "ingrese cantidad de edades"
+Leer C
+Para (I=0;I<=C;I++) 
+Escribir: "ingrese edad"
+Leer EDAD
+Si (I==0)
+MAYOR=NUM_IN  MENOR=NUM_IN;
+Sino (NUM_IN>MAYOR)
+MAYOR=NUM_IN
+Fin Si
+Si(NUM<MENOR)
+MENOR=NUM_IN
+Fin Si
+SUMA_EDADES=SUMA_EDADES+NUM_IN
+Fin Para
+PROMEDIO=SUMA_EDADES/C
+Escribir: "La edad mayor es: ",MAYOR;
+Escribir: "La edad menor es: ",MENOR;
+Escribir: "El promedio de las edades es: ",PROMEDIO
+FIN

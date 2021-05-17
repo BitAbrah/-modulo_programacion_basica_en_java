@@ -1,0 +1,40 @@
+Algoritmo El_Cometa
+	// Productos clave 1 a 6
+	COSTO_PRODUCCION=0; //Materia prima + mano de obra + gastos fabricación
+	PRECIO_VENTA=0; // COSTO_PRODUCCION + 45% de su costo 
+	MANO_OBRA=0; //3 y 4 75% costo materia prima "MATERIA_PRIMA" ; 1 y 5 80% ; 2 y 6 85%
+	MATERIA_PRIMA=0; // ingresar valor materia prima
+	GASTO_FABRICACION=0; // 2 y 5 30% Sobre Costo materia prima "MATERIA_PRIMA" ; 3 y 6 35% ; 1 o 4 28% 
+	CLAVE=0;
+	Escribir "Ingrese CLAVE de 1 a 6";
+	Leer CLAVE;
+	Escribir "Ingrese valor de MATERIA PRIMA";
+	Leer MATERIA_PRIMA;
+	// GASTO_FABRICACION
+	Si (CLAVE=2 o CLAVE=5)
+		GASTO_FABRICACION=MATERIA_PRIMA+((MATERIA_PRIMA*30)/100)
+	SiNo
+		Si(CLAVE=3 o CLAVE=6)
+			GASTO_FABRICACION=MATERIA_PRIMA+((MATERIA_PRIMA*35)/100)
+		Sino // 1 o 4
+			GASTO_FABRICACION=MATERIA_PRIMA+((MATERIA_PRIMA*28)/100)
+		FinSi
+	FinSi
+	// MANO_OBRA
+	Si (CLAVE=3 o CLAVE=4)
+		MANO_OBRA=MATERIA_PRIMA+((MATERIA_PRIMA*75)/100)
+	SiNo
+		Si(CLAVE=1 o CLAVE=5)
+			MANO_OBRA=MATERIA_PRIMA+((MATERIA_PRIMA*80)/100)
+		Sino // 2 o 6
+			MANO_OBRA=MATERIA_PRIMA+((MATERIA_PRIMA*85)/100)
+		FinSi
+	FinSi
+	COSTO_PRODUCCION=GASTO_FABRICACION+MANO_OBRA+MATERIA_PRIMA
+	PRECIO_VENTA=COSTO_PRODUCCION+((COSTO_PRODUCCION*45)/100)
+	Escribir "Gasto de fabricación",GASTO_FABRICACION;
+	Escribir "Mano de obra",MANO_OBRA;
+	Escribir "Costo Producción", COSTO_PRODUCCION;
+	Escribir "Precio Venta", PRECIO_VENTA;
+	Escribir "Valor materia prima",MATERIA_PRIMA;
+FinAlgoritmo

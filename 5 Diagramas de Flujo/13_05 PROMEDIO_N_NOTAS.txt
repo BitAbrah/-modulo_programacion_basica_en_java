@@ -1,0 +1,12 @@
+Algoritmo PROM_N_NOTAS
+	SUM=0;
+	CANT=0;
+	Escribir "Cuantas notas quiere?";
+	Leer CANT;
+		Para I<-1 Hasta CANT Con Paso 1 Hacer
+			Escribir "Ingrese NOTA";
+			Leer NUM;
+			SUM=SUM+NUM;
+		Fin Para
+		Escribir "El primedio de sus notas es: ",SUM/CANT;
+FinAlgoritmo

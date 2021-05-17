@@ -1,0 +1,16 @@
+package invertirnumeros;
+import java.util.Scanner;
+public class InvertirNumeros {
+
+    public static void main(String[] args) {
+        int A,B;
+        Scanner key = new Scanner(System.in);
+        System.out.println("Ingrese 1er NUM ");
+            A = key.nextInt();
+        System.out.println("Ingrese 2do NUM ");
+            B = key.nextInt();
+            A=A+B;B=A-B;A=A-B;
+        System.out.println("El primer numero ahora es: "+A);
+        System.out.println("El segundo numero ahora es: "+B);
+    }
+}

@@ -1,0 +1,10 @@
+SUMA MULTIPLOS DE 9
+
+Int SUMA = 0
+Para(I==1;I<==100;I++)
+SI I>==9 & I MOD9==0
+SUMA=SUMA+I
+Escribir: "Resultado",SUMA;
+FIN SI
+FIN Para
+FIN

@@ -1,0 +1,16 @@
+CAMBIAR RUEDA VEHÍCULO
+
+
+Ruedas
+Llaves para tuercas 
+Gata
+Tuercas
+
+Paso 1: Ingreso vehiculo
+Paso 2: Levanto veiculo
+Paso 3: Reviso Ruedas y Selecciono
+Paso 4: En rueda seleccionada Saco tuercas con llave
+Paso 5: Reemplazo rueda
+Paso 6: Apreto tuercas
+Paso 7: Bajo Vehículo
+Paso 8: Entrego Vehículo

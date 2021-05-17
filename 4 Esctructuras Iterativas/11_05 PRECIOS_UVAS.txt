@@ -1,0 +1,32 @@
+Algoritmo ASOCIACION_VINICULTORES
+	TIPO<-0;
+	TAMAÑO<-0;
+	PRECIO<-0;
+	CICLO<-1;
+	MIENTRAS CICLO=1
+	Escribir "Ingrese precio inicial";
+	Leer PRECIO;
+	Escribir "Ingrese el Tipo de UVA A=1 ó B=2";
+	Leer TIPO;
+	Escribir "Ingrese Tamaño de UVA 1 ó 2";
+	Leer TAMAÑO;
+	Si (TIPO=1)
+		Si (TAMAÑO=1)
+			PRECIO=PRECIO+20;
+		SiNo
+			PRECIO=PRECIO+30;
+		FinSi
+	FinSi
+	SI (TIPO=2)
+		Si (TAMAÑO=1)
+			PRECIO=PRECIO-20;
+		SiNo
+			PRECIO=PRECIO-30;
+		FinSi
+	FinSi
+	Escribir "El precio final es: ",PRECIO;
+	Escribir "";
+	EScribir "Desea continuar? 1=si 2=no";
+	Leer CICLO;
+FinMientras
+FinAlgoritmo

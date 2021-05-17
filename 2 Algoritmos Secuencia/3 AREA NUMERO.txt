@@ -1,0 +1,8 @@
+_AREA DE UN NUMERO_
+
+Variables:
+Int A
+
+Imprimir: "ingrese número"
+Leer A
+Imprimir: "El cuadrado de: "+A+ "Es: ", A*A

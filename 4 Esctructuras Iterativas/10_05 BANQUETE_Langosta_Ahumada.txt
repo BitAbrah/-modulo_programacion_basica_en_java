@@ -1,0 +1,21 @@
+Algoritmo Langosta_Ahumada
+	PERSONAS<-0;
+	PRESUPUESTO<-1;
+	A<-1;
+	Mientras (A=1)
+	Escribir "Ingrese cantidad de personas?";
+	Leer PERSONAS;
+	Si (PERSONAS<200)
+		PRESUPUESTO<-PERSONAS*9500;
+	SiNo
+		Si (PERSONAS>=300)
+			PRESUPUESTO<-PERSONAS*7500;
+		FinSi
+		PRESUPUESTO<-PERSONAS*8500;
+	FinSi
+	Escribir "El presupuesto es: ",PRESUPUESTO;
+	Escribir "";
+	Escribir "Calcular nuevamente?";
+	Leer A;
+	FinMientras
+FinAlgoritmo

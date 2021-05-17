@@ -1,0 +1,64 @@
+Algoritmo NAUFRAGO_SATISFYER
+	BURGER=0;
+	CREDITO=0;
+	C=0;
+	P_BURGER=0;
+	P_FINAL=0;
+	DESCUENTO=0;
+	Escribir "Qué ambuerguesa desea:"
+	Escribir "Simple = 1"
+	Escribir "Doble  = 2"
+	Escribir "Triple = 3"
+	Leer BURGER;
+	
+	Segun BURGER Hacer
+		1:
+			P_BURGER=2000;
+			Escribir "Cuantas hamburguesas desea?";
+			Leer C;
+			Escribir "Paga con tarjeta? 1=Si; 2=No";
+			Leer CREDITO;
+			Si (CREDITO==1)
+				P_FINAL=C*P_BURGER;
+				DESCUENTO=P_FINAL*0.05;
+				P_FINAL=P_FINAL-DESCUENTO;
+				Escribir "El valor de su pedido es: ",P_FINAL;
+			SiNo
+				P_FINAL=C*P_BURGER;
+				Escribir "El valor de su pedido es: ",P_FINAL;
+			FinSi
+		2:
+			P_BURGER=2500;
+			Escribir "Cuantas hamburguesas desea?";
+			Leer C;
+			Escribir "Paga con tarjeta? 1=Si; 2=No";
+			Leer CREDITO;
+			Si (CREDITO==1)
+				P_FINAL=C*P_BURGER;
+				DESCUENTO=P_FINAL*0.05;
+				P_FINAL=P_FINAL-DESCUENTO;
+				Escribir "El valor de su pedido es: ",P_FINAL;
+			SiNo
+				P_FINAL=C*P_BURGER;
+				Escribir "El valor de su pedido es: ",P_FINAL;
+			FinSi
+		3:
+			P_BURGER=2800;
+			Escribir "Cuantas hamburguesas desea?";
+			Leer C;
+			Escribir "Paga con tarjeta? 1=Si; 2=No";
+			Leer CREDITO;
+			Si (CREDITO==1)
+				P_FINAL=C*P_BURGER;
+				DESCUENTO=P_FINAL*0.05;
+				P_FINAL=P_FINAL-DESCUENTO;
+				Escribir "El valor de su pedido es: ",P_FINAL;
+			SiNo
+				P_FINAL=C*P_BURGER;
+				Escribir "El valor de su pedido es: ",P_FINAL;
+			FinSi
+		De Otro Modo:
+			Escribir "Ingrese una opción válida";
+	Fin Segun
+	
+FinAlgoritmo

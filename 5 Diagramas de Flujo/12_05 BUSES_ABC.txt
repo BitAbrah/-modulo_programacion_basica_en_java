@@ -1,0 +1,50 @@
+Algoritmo BUSES
+	TIPO=0;
+	C_PERS_KM=0;
+	PERSONAS=0;
+	PRECIO_FINAL=0;;
+	Escribir "Ingrese opción BUS_A=1 ; BUS_B=2 ; BUS_C=3";
+	Leer TIPO;
+	Segun TIPO Hacer
+		1:
+			C_PERS_KM=200;
+			Escribir "Cuantas prsonas viajan?";
+			Leer PERSONAS;
+			Si(PERSONAS>=20)
+			PRECIO_FINAL=C_PERS_KM*PERSONAS;
+			Escribir "El Valor sería: ",PRECIO_FINAL;
+			Escribir "El costo por persona sería: ",PRECIO_FINAL/PERSONAS;
+		SiNo
+				PRECIO_FINAL=C_PERS_KM*20;
+				Escribir "El Valor Final sería: ",PRECIO_FINAL;
+			FinSi
+		
+		2:
+			C_PERS_KM=250;
+			Escribir "Cuantas prsonas viajan?";
+			Leer PERSONAS;
+			Si(PERSONAS>=20)
+				PRECIO_FINAL=C_PERS_KM*PERSONAS;
+				Escribir "El Valor sería: ",PRECIO_FINAL;
+				Escribir "El costo por persona sería: ",PRECIO_FINAL/PERSONAS;
+			SiNo
+				PRECIO_FINAL=C_PERS_KM*20;
+				Escribir "El Valor Final sería: ",PRECIO_FINAL;
+			FinSi
+		3:
+			C_PERS_KM=300;
+			Escribir "Cuantas prsonas viajan?";
+			Leer PERSONAS;
+			Si(PERSONAS>=20)
+				PRECIO_FINAL=C_PERS_KM*PERSONAS;
+				Escribir "El Valor sería: ",PRECIO_FINAL;
+				Escribir "El costo por persona sería: ",PRECIO_FINAL/PERSONAS;
+			SiNo
+				PRECIO_FINAL=C_PERS_KM*20;
+				Escribir "El Valor Final sería: ",PRECIO_FINAL;
+			FinSi
+		De Otro Modo:
+			Escribir "Ingrese una opción válida"
+	Fin Segun
+	
+FinAlgoritmo

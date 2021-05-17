@@ -1,0 +1,15 @@
+_CUANTOS NUMEROS QUIERO SUMAR_
+
+Int C=0
+Int NUM=0
+Inst SUMA=0
+
+Escribir: "Ingrese cuantos numeros quiere sumar?"
+Leer C
+Para (I==0;I<==C;I++)
+Escribir: "ingrese numero a sumar"
+Leer NUM
+SUMA=SUMA+NUM
+Fin Para
+Escribir: "La suma de sus numeros es: ",SUMA;
+FIN

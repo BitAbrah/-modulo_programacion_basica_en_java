@@ -1,0 +1,49 @@
+Algoritmo DR_LORENZO
+	//Valores 3 2000 ; 4y5 15000 ; 6a8 10000 , 9 arriba 5000;
+	N_CITA=0;
+	TARIFA_C=0;
+	SUMAS=0;
+	P_CITAS_ACUM=0;
+	A=1;
+	Mientras (A==1)
+	Escribir "Ingrese el número de cita";
+	Leer N_CITA;
+	
+	Si (N_CITA<=3)
+		TARIFA_C=20000;
+		P_CITAS_ACUM=TARIFA_C*N_CITA;
+		Escribir "El Valor de la cita es: ", TARIFA_C;
+		Escribir "Hasta ahora ha gastado: ",P_CITAS_ACUM;
+	Sino 
+		Si (N_CITA=4 o N_CITA=5)
+			TARIFA_C=15000;
+			SUMAS=20000*3;
+			N_CITA=N_CITA-3;
+			P_CITAS_ACUM=SUMAS+(N_CITA*TARIFA_C);
+			Escribir "El Valor de la cita es: ", TARIFA_C;
+			Escribir "Hasta ahora ha gastado: ",P_CITAS_ACUM;
+		SiNo
+			Si (N_CITA>=6 & N_CITA<=8)
+				TARIFA_C=10000;
+				SUMAS=(20000*3)+(15000*2);
+				N_CITA=N_CITA-5;
+				P_CITAS_ACUM=SUMAS+(N_CITA*TARIFA_C);
+				Escribir "El Valor de la cita es: ", TARIFA_C;
+				Escribir "Hasta ahora ha gastado: ",P_CITAS_ACUM;
+			SiNo
+				TARIFA_C=5000;
+				SUMAS=(20000*3)+(15000*2)+(10000*3);
+				N_CITA=N_CITA-8;
+				P_CITAS_ACUM=SUMAS+(N_CITA*TARIFA_C);
+				Escribir "El Valor de la cita es: ", TARIFA_C;
+				Escribir "Hasta ahora ha gastado: ",P_CITAS_ACUM;
+			FinSi
+		FinSi
+	FinSi
+	Escribir "";
+	Escribir "Deseas seguir? Si=1 ; No=2";
+	Leer A;
+	Escribir "";
+FinMientras
+
+FinAlgoritmo

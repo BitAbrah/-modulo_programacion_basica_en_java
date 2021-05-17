@@ -1,0 +1,20 @@
+package promediocantidadn;
+import java.util.Scanner;
+public class PromedioCantidadN {
+
+    public static void main(String[] args) {
+        int c=0;
+        float n=0;
+        float sum=0;
+        Scanner key = new Scanner(System.in);
+        System.out.println("Ingrese cuántas notas quiere promediar");
+        c = key.nextInt();
+        for (int i=1;i<=c;i++)
+        {
+            System.out.println("Ingrese nota "+i);
+            n = key.nextFloat();
+            sum=sum+n;
+        }
+        System.out.println("El promedio es: "+sum/c);
+    }
+}

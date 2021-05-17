@@ -1,0 +1,11 @@
+_INVERSIÓN_
+
+Float D
+Float P
+Float G
+
+Imprimir ingrese capital
+Leer D
+P=D0,02
+G=D+P
+Imprimir usted a fin de mes obtendrá ,G

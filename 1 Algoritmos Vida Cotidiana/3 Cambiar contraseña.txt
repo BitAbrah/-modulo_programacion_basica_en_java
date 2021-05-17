@@ -1,0 +1,13 @@
+CAMBIAR CLAVE CORREO
+
+
+3 Bandejas
+
+Paso 1: Recibo en una bandeja 1 el correo a cambiar
+Paso 2: Reviso si existe el correo
+Paso 3: Compruebo metodos de recuperación
+Paso 4: Envío Recuperación
+Paso 5: En Bandeja 2 Compruebo si Clave cumple requisitos de seguridad
+Paso 6: En Bandeja 3 Pido repetir contraseña y comparo con Bandeja 2
+Paso 7: Hago Cambio
+Paso 8: Confirmo cambio correo

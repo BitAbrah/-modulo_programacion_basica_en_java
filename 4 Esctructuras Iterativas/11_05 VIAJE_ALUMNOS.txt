@@ -1,0 +1,30 @@
+Algoritmo VIAJE_ESTUDIOS
+	A<-1
+	Individual=0;
+Mientras A=1
+	C_ALUMNOS=0;
+	Escribir "Ingrese cuántos alúmnos irán"
+	Leer C_ALUMNOS;
+	Si (C_ALUMNOS<30)
+		RENTA_BUS=400000;
+		Individual=400000/C_ALUMNOS
+	FinSi
+	Si (C_ALUMNOS>=100)
+		Individual=6500;
+		RENTA_BUS=C_ALUMNOS*Idividual;
+	FinSi
+	Si (C_ALUMNOS>=30 & C_ALUMNOS<50)
+		Individual=9500;
+		RENTA_BUS=C_ALUMNOS*Individual;
+	FinSi
+	Si (C_ALUMNOS>=50 & C_ALUMNOS<100)
+		Individual=7000;
+		RENTA_BUS=C_ALUMNOS*Individual;
+	FinSi
+	Escribir "Por ",C_ALUMNOS," Usted debe cancelar la gloriosa suma de $",RENTA_BUS;
+	Escribir "Y cada alúmno deberá pagar ",Individual;
+	Escribir ""
+	Escribir "Desea realizar otro cálculo? 1=si 2=no"
+	Leer A
+FinMientras
+FinAlgoritmo

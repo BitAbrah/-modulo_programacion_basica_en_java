@@ -1,0 +1,43 @@
+ALGORITMO COMPRA TIENDA VIRTUAL
+
+
+Tarjeta crédito o débito
+Usuario
+Producto
+
+
+Paso 1: Ingreso a la tienda virtual
+Paso 2: Ingreso mi usuario y contraseña
+Paso 3: Busco productos y selecciono
+Paso 4: Ingreso a carrito de compra
+Paso 5: Selecciono tipo de despacho o retiro en tienda
+Paso 6: Selecciono metodo de pago
+Paso 7: Realizo Compra
+paso 8: Recibo comprobante de compra
+Paso 9: Me tomo un café y espero mi producto xd
+
+V2___
+
+_COMPRA ONLINE_
+
+CONSTANTES:
+
+Usuario
+Producto
+
+VARIABLES:
+
+Contraseña
+Precio 
+Tarjeta De pago
+Despacho
+
+Paso 1: Ingreso a la tienda virtual
+Paso 2: Ingreso mi usuario y contraseña
+Paso 3: Busco productos y selecciono
+Paso 4: Ingreso a carrito de compra
+Paso 5: Selecciono tipo de despacho o retiro en tienda
+Paso 6: Selecciono metodo de pago
+Paso 7: Realizo Compra
+paso 8: Recibo comprobante de compra
+Paso 9: Me tomo un café y espero mi producto xd

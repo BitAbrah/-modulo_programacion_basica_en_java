@@ -1,0 +1,8 @@
+SUMA DEL 1 al 100
+
+Int SUMA = 0
+Para(I==1;I<==100;I++)
+SUMA=SUMA+I
+Escribir: "Resultado",SUMA;
+FIN Para
+FIN

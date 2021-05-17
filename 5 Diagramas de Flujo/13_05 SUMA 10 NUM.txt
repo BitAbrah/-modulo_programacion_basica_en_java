@@ -1,0 +1,11 @@
+Algoritmo SUMA_10
+	SUM=0;
+	
+	Para I<-1 Hasta 10 Con Paso 1 Hacer
+		Escribir "Ingrese Número";
+		Leer NUM;
+		SUM=SUM+NUM;
+	Fin Para
+	Escribir "La suma es: ",SUM;
+	
+FinAlgoritmo

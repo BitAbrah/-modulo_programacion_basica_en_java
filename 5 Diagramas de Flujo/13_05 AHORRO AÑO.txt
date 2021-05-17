@@ -1,0 +1,10 @@
+Algoritmo AHORRO_1AÑO
+	AHORRO=0;
+	Para I<-1 Hasta 12 Con Paso 1 Hacer
+		Escribir "Ingrese valor depósito para el mes: ",I;
+		Leer DEPOSITO;
+		AHORRO=AHORRO+DEPOSITO;
+		Escribir "Su ahorro para el mes: ",I," ...Es: ",AHORRO;
+	Fin Para
+	
+FinAlgoritmo

@@ -1,0 +1,19 @@
+INICIO
+
+FLOAT PRECIO
+FLOAT DESCUENTO
+FLOAT PRECIO_FINAL
+
+Escribir: "Indique su precio para ver descuento"
+Leer PRECIO
+Si (PRECIO>=250000)
+DESCUENTO=PRECIO*0,25
+PRECIO_FINAL=PRECIO-DESCUENTO
+Escribir: "Su traje ahora valdrá: ",PRECIO_FINAL
+Sino
+DESCUENTO=PRECIO*0,08
+PRECIO_FINAL=PRECIO-DESCUENTO
+Escribir: "Su traje ahora valdrá: ",PRECIO_FINAL
+Fin Si
+
+FIN

@@ -1,0 +1,22 @@
+LIQUIDACION:
+
+Rut trabajador
+Sueldo base o bruto
+Horas Extras
+Días trabajados
+Bonos Alimentación
+Bonos Traslado
+Descuentos salud
+Descuento AFP
+Seguro Cesantía
+Seguros extras 
+Descuentos pensión si corresponde
+
+Paso 1: Ingreso rut trabajador
+Paso 2: Consultar días trabajados
+Paso 3: Consultar horas extras
+Paso 4: Consultar AFP
+Paso 5: Isapres + cargas
+Paso 6: Asignación Bonos
+Paso 7: Aplicar descuentos 
+Paso 8: Informe sueldo líquido
