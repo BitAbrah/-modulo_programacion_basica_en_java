@@ -1,0 +1,68 @@
+package switchmenugoloso;
+import java.util.Scanner;
+public class SwitchMenuGoloso {
+
+    public static void main(String[] args) {
+       Scanner key = new Scanner(System.in);
+        int op,VP,C,PF,PAGO;
+        System.out.println("Bienvenidos a super golosín");
+        System.out.println("Qué se va a servirse?");
+        System.out.println("1=Sangurururu 2=Pizza_light 3=Tocomple");
+        op = key.nextInt();
+        switch (op){
+            case 1:
+                VP=2000;
+                System.out.println("Cuantos Sangurururus?");
+                C = key.nextInt();
+                PF=VP*C;
+                System.out.println("Seleccione 1=Débito o 2=Créito");
+                PAGO = key.nextInt();
+                if (PAGO==1){
+                    PF=PF+300;}
+                else { PF=PF+((PF*5)/100);}
+                if (PF>10000){
+                    System.out.println("El valor de su compra es "+PF);}
+                else{
+                    System.out.println("El valor de su pedido es : "+PF);
+                    System.out.println("Con despacho queda en :"+(PF+2000));
+        }
+                    break;
+            case 2:
+                VP=3500;
+                System.out.println("Cuantas Pizzas quiere?");
+                C = key.nextInt();
+                PF=VP*C;
+                System.out.println("Seleccione 1=Débito o 2=Créito");
+                PAGO = key.nextInt();
+                if (PAGO==1){
+                    PF=PF+300;}
+                else { PF=PF+((PF*5)/100);}
+                if (PF>10000){
+                    System.out.println("El valor de su compra es "+PF);}
+                else{
+                    System.out.println("El valor de su pedido es : "+PF);
+                    System.out.println("Con despacho queda en :"+(PF+2000));
+        }
+                    break;
+            case 3:
+                VP=1000;
+                System.out.println("Cuantos Tocomples sa va a llevars?");
+                C = key.nextInt();
+                PF=VP*C;
+                System.out.println("Seleccione 1=Débito o 2=Créito");
+                PAGO = key.nextInt();
+                if (PAGO==1){
+                    PF=PF+300;}
+                else { PF=PF+((PF*5)/100);}
+                if (PF>10000){
+                    System.out.println("El valor de su compra es "+PF);}
+                else{
+                    System.out.println("El valor de su pedido es : "+PF);
+                    System.out.println("Con despacho queda en :"+(PF+2000));
+        }
+                    break;
+            default:
+                System.out.println("Pls pon una respuesta válida");
+        }
+    }
+}

@@ -1,0 +1,43 @@
+package sumaparesmultiimpares;
+import java.util.Scanner;
+public class SumaParesMultiImpares {
+
+    public static void main(String[] args) {
+     Scanner key = new Scanner(System.in);
+     int C,N,CP=0,CI=0;
+     float PAR=0,IMPAR=1;
+        System.out.println("Ingrese cuántos números desea verificar");
+        System.out.println("");
+        C=key.nextInt();
+        for (int i=1;i<=C;i++){
+            System.out.println("Ingrese numero "+i);
+            System.out.println("");
+            N=key.nextInt();
+            if (N%2==0){
+            PAR=PAR+N;
+            CP++;
+            }
+            else {
+            IMPAR=IMPAR*N;
+            CI++;
+            }
+        }
+        System.out.println("");
+            System.out.println("Ingresó "+CP+" Pares y su suma es: "+PAR);
+            System.out.println("Además...");
+            System.out.println("Ingresó "+CI+" Impares y su multiplicación es: "+IMPAR);
+            System.out.println("");
+            System.out.println("Por otra parte le debo contar que usted ingresó");
+            if (CP>CI){
+                System.out.println("más Pares que Impares... he dicho!");
+            } else {
+                if (CP==CI){
+                    System.out.println("igual cantidad de Pares que de Impares");
+                }
+                else {
+                    System.out.println("más Impares que Pares.. sí señor!");
+                }
+            }
+            System.out.println("");
+    }
+}

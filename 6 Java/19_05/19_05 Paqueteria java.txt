@@ -1,0 +1,85 @@
+package paqueteria;
+import java.util.Scanner;
+public class Paqueteria {
+
+    public static void main(String[] args) {
+        Scanner key = new Scanner(System.in);
+        int z,cg;
+        float g,vf;
+        System.out.println("Ingrese Zona de envío");
+        System.out.println("Zona 1: América del Norte");
+        System.out.println("Zona 2: América Central");
+        System.out.println("Zona 3: América del Sur");
+        System.out.println("Zona 4: Europa");
+        System.out.println("Zona 5: Asia");
+        z = key.nextInt();
+    switch (z){
+        case 1:
+            cg=110;
+            System.out.println("Por favor ingrese el peso de su paquete en Gramos");
+            g = key.nextFloat();
+            if (g>5000){
+                System.out.println("Por plíticas de empresa, no podemos transportar su paquete");
+                System.out.println("Por favor, debe traer un producto de hasta 5K");
+            }
+            else {
+                vf=cg*g;
+                System.out.println("El valos de su encomienda a América del Norte es: "+vf);
+            }
+            break;
+        case 2:
+            cg=100;
+            System.out.println("Por favor ingrese el peso de su paquete en Gramos");
+            g = key.nextFloat();
+            if (g>5000){
+                System.out.println("Por plíticas de empresa, no podemos transportar su paquete");
+                System.out.println("Por favor, debe traer un producto de hasta 5K");
+            }
+            else {
+                vf=cg*g;
+                System.out.println("El valos de su encomienda a América Central es: "+vf);
+            }
+            break;
+        case 3:
+            cg=120;
+            System.out.println("Por favor ingrese el peso de su paquete en Gramos");
+            g = key.nextFloat();
+            if (g>5000){
+                System.out.println("Por plíticas de empresa, no podemos transportar su paquete");
+                System.out.println("Por favor, debe traer un producto de hasta 5K");
+            }
+            else {
+                vf=cg*g;
+                System.out.println("El valos de su encomienda a América del Sur es: "+vf);
+            }
+            break;
+        case 4:
+            cg=240;
+            System.out.println("Por favor ingrese el peso de su paquete en Gramos");
+            g = key.nextFloat();
+            if (g>5000){
+                System.out.println("Por plíticas de empresa, no podemos transportar su paquete");
+                System.out.println("Por favor, debe traer un producto de hasta 5K");
+            }
+            else {
+                vf=cg*g;
+                System.out.println("El valos de su encomienda a Europa es: "+vf);
+            }
+            break;
+        case 5:
+            cg=270;
+            System.out.println("Por favor ingrese el peso de su paquete en Gramos");
+            g = key.nextFloat();
+            if (g>5000){
+                System.out.println("Por plíticas de empresa, no podemos transportar su paquete");
+                System.out.println("Por favor, debe traer un producto de hasta 5K");
+            }
+            else {
+                vf=cg*g;
+                System.out.println("El valos de su encomienda a Asia es: "+vf);
+            }
+            break;
+        default: System.out.println("Ingrese opcion válida");           
+    }
+    }
+}

@@ -1,0 +1,38 @@
+package mostrarsolopares;
+import java.util.Scanner;
+public class MostrarSoloParesOImpares {
+
+    public static void main(String[] args) {
+        Scanner key = new Scanner(System.in);
+        int a,s;
+        System.out.println("Hasta qué numero desea verificar");
+        a=key.nextInt();
+        System.out.println("Qué quieres ver: 1=Pares 2=Impares 3=Pares e Impares");
+        s=key.nextInt();
+        switch (s){
+            case 1:
+        System.out.println("Sus pares son");
+        for (int i=1;i<=a;i++){
+            if (i%2==0) System.out.println(i);
+        } break;
+            case 2:
+        System.out.println("Sus impares son");
+        for (int i=1;i<=a;i++)
+            if (i%2!=0){
+                System.out.println(i);
+            } break;
+            
+            case 3:
+                System.out.println("Sus pares son");
+        for (int i=1;i<=a;i++){
+            if (i%2==0) System.out.println(i);
+        }
+        System.out.println("Sus impares son");
+        for (int i=1;i<=a;i++)
+            if (i%2!=0){
+                System.out.println(i);
+            } break;
+            default: System.out.println("¬¬");
+        }
+    } 
+}

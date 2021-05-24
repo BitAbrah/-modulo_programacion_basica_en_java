@@ -1,0 +1,97 @@
+package chismefon2.pkg0;
+import java.util.Scanner;
+public class Chismefon20 {
+
+    public static void main(String[] args) {
+        Scanner key = new Scanner(System.in);
+                int M,D,VM,H,IH=0;
+        float P_F,SUM;
+        System.out.println("Primero que nada BUENOS DIAS");
+        System.out.println("Necesitamos seleccionar lo siguiente: ");
+        System.out.println("En qué horario llamó: 1=Matutino 2=Vespertino");
+        H = key.nextInt();
+        if (H==1 || H==2){
+        switch (H) {
+            case 1:
+                IH=15;
+                break;
+            case 2:
+                IH=10; 
+                break;
+        }
+        System.out.println("Ingrese cantidad de minutos hablados");
+                M = key.nextInt();
+                 if (M<=5){
+                VM=100;
+                P_F=VM*M;
+                P_F=P_F+((P_F*IH)/100);
+                     System.out.println("Qué día llamó: 1=Día Hábil 2=Domingo");
+                     D= key.nextInt();
+                     if (D==2){
+                         P_F=P_F+((P_F*3)/100);
+                         System.out.println("El valor de su llamada es: "+P_F);
+                     }
+                     else 
+                         System.out.println("El valor de su llamada es: "+P_F);
+                 }
+                 else {
+                     if (M>=6 && M<=8){
+                         VM=80;
+                         SUM=(5*100);
+                         M=M-5;
+                         P_F=VM*M+SUM;
+                         P_F=P_F+((P_F*IH)/100);
+                     System.out.println("Qué día llamó: 1=Día Hábil 2=Domingo");
+                     D= key.nextInt();
+                     if (D==2){
+                         P_F=P_F+((P_F*3)/100);
+                         System.out.println("El valor de su llamada es: "+P_F);
+                     }       
+                     else {
+                             System.out.println("El valor de su llamada es: "+P_F);
+                     }
+                     }
+                     else {
+                         if (M>=9 && M<=10){
+                         VM=70;
+                         SUM=(5*100)+(3*70);
+                         M=M-8;
+                         P_F=VM*M+SUM;
+                         P_F=P_F+((P_F*IH)/100);
+                     System.out.println("Qué día llamó: 1=Día Hábil 2=Domingo");
+                     D= key.nextInt();
+                     if (D==2){
+                         P_F=P_F+((P_F*3)/100);
+                         System.out.println("El valor de su llamada es: "+P_F);
+                     }       
+                     else {
+                             System.out.println("El valor de su llamada es: "+P_F);
+                     }
+                     }
+                         else {
+                             if (M>10){
+                                 VM=50;
+                         SUM=(5*100)+(3*70)+(2*70);
+                         M=M-10;
+                         P_F=VM*M+SUM;
+                         P_F=P_F+((P_F*IH)/100);
+                     System.out.println("Qué día llamó: 1=Día Hábil 2=Domingo");
+                     D= key.nextInt();
+                     if (D==2){
+                         P_F=P_F+((P_F*3)/100);
+                         System.out.println("El valor de su llamada es: "+P_F);
+                     }       
+                     else {
+                             System.out.println("El valor de su llamada es: "+P_F);
+                     }
+                             }
+                         }
+                     }
+                 }
+        }
+        else {
+            System.out.println("Ingrese un número correcto pls");
+        }
+    }
+    
+}

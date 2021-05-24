@@ -1,0 +1,28 @@
+package numerosamigos;
+import java.util.Scanner;
+public class NumerosAmigos {
+
+    public static void main(String[] args) {
+        Scanner key = new Scanner(System.in);
+        long A,B,SA=0,SB=0;
+        System.out.println("Ingrese 1er Número");
+        A=key.nextLong();
+        System.out.println("Ingrese 2do Número");
+        B=key.nextLong();
+        for (long i=1;i<=(A/2);i++){
+            if (A%i==0){
+                SA=SA+i;
+            }   
+        }
+        for (long j=1;j<=(B/2);j++){
+            if (B%j==0){
+                SB=SB+j;
+            }  
+        }
+        if (SA==B && SB==A){
+            System.out.println("Sus números son entero panas");
+        }
+        else {System.out.println("Sun numeros se odian xd");}
+    }
+    
+}

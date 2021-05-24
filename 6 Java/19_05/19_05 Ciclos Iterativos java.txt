@@ -1,0 +1,51 @@
+package ciclositerativos;
+import java.util.Scanner;
+public class CiclosIterativos {
+
+    public static void main(String[] args) {
+    Scanner key = new Scanner(System.in);
+    int s=0;    
+        System.out.println("Ahora mostraremos los numeros del 1 al 100 y del 100 al 1");
+        System.out.println("Qué iteración te parece mostrar ahoritas?");
+        System.out.println("1= Ciclo FOR");
+        System.out.println("2= Ciclo While");
+        System.out.println("3= Ciclo Do-While");
+        s=key.nextInt();
+        switch (s){
+            case 1:
+                for (int i=1;i<=100;i++){
+                System.out.println(i);}
+                System.out.println("Ahora va al revés");
+                for (int i=100;i>=1;i--)
+                    System.out.println(i);
+                break;
+            case 2:
+                int a=1;
+                while ( a<=100){
+                    System.out.println(a);
+                    a++;
+            }
+                System.out.println("Del Revés");
+                a=100;
+                while ( a>=1){
+                    System.out.println(a);
+                    a--;
+            }
+                break;
+            case 3:
+                int c=1;
+                do {
+                    System.out.println(c);
+                c++;
+                } while(c<=100);
+                System.out.println("Ahora Pa atrás");
+                c=100;
+                do {
+                    System.out.println(c);
+                c--;
+                } while(c>=1);
+                break;
+            default: System.out.println("Aprende a ser vío >:v");
+        }          
+    }  
+}

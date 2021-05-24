@@ -1,0 +1,22 @@
+package ingresarnumperfecto;
+import java.util.Scanner;
+public class IngresarNumPerfecto {
+
+    public static void main(String[] args) {
+        Scanner key = new Scanner(System.in);
+        long N=0,SUM=0;
+        System.out.println("Ingrese Numero a verificar");
+        N=key.nextLong();
+        for (int i=1;i<=(N/2);i++){
+            System.out.println(i);
+            if (N%i==0){
+                SUM=SUM+i;
+            }
+        }
+        if(SUM==N){
+            System.out.println("Su numero "+N+" Es tan perfecto como usted :3");
+        } else {
+            System.out.println("Su numero "+N+" no es perfecto, pero usted si BB");
+        }
+    }  
+}

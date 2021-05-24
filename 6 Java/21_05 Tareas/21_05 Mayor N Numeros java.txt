@@ -1,0 +1,18 @@
+package mayorn_num;
+import java.util.Scanner;
+public class MayorN_num {
+
+    public static void main(String[] args) {
+        Scanner key = new Scanner(System.in);
+        int C,N,MAYOR=0;
+        System.out.println("Ingrese cuántos números desea verificar");
+        C=key.nextInt();
+        for (int i=1;i<=C;i++){
+            System.out.println("Ingrese número :"+i);
+            N=key.nextInt();
+            if (i==1){MAYOR=N;}
+            if (N>MAYOR){MAYOR=N;}
+        }
+        System.out.println("El numero mayor ingresado es: "+MAYOR);
+    }  
+}

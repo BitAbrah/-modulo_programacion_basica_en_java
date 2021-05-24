@@ -1,0 +1,39 @@
+package paresdennumeros;
+import java.util.Scanner;
+public class ParesDeNNumeros {
+
+    public static void main(String[] args) {
+        Scanner key = new Scanner(System.in);
+        int C,N,PAR=0,IMPAR=0,R;
+        do {
+        System.out.println("Ingrese cuántos números desea ingresar");
+            System.out.println("");
+        C=key.nextInt();
+        if (C!=0){
+        for (int i=1;i<=C;i++){
+            System.out.println("");
+            System.out.println("Ingrese número "+i);
+            System.out.println("");
+            N=key.nextInt();
+            if (N%2==0){
+                PAR++;
+            }
+            else IMPAR++;}
+            System.out.println("");
+            System.out.println("Los pares son: "+PAR);
+            System.out.println("");
+            System.out.println("Y los impares son: "+IMPAR);
+        
+        }else {
+        System.out.println("");
+        System.out.println("Vuelves a poner 0 te parto la madre >:c");}
+        System.out.println("");
+        System.out.println("Desea continuar? 1=Si 2=Nel");
+        System.out.println("");
+        R=key.nextInt();
+        } while (R==1);
+        System.out.println("");
+        System.out.println("Adiós... no vuelvas!");
+        System.out.println("");
+    }
+}

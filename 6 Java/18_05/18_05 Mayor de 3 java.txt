@@ -1,0 +1,27 @@
+package mayorde3;
+import java.util.Scanner;
+public class MayorDe3 {
+
+    public static void main(String[] args) {
+       Scanner key = new Scanner(System.in);
+       int A,B,C;
+           System.out.println("Ingrese 1er numero ");
+           A= key.nextInt();
+           System.out.println("Ingrese 2do numero ");
+           B= key.nextInt();
+           System.out.println("Ingrese 3er numero ");
+           C= key.nextInt();
+           if (A>B && A>C){
+               System.out.println("El mayor es: "+A);
+           }
+           else{
+               if (B>A && B>C) {
+                   System.out.println("El mayor es: "+B);
+               }
+               else {
+                       System.out.println("El mayor es: "+C);
+               }
+           }
+    }
+    
+}

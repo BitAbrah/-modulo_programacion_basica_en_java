@@ -1,0 +1,62 @@
+package busesabc;
+import java.util.Scanner;
+public class BusesABC {
+
+    public static void main(String[] args) {
+    Scanner key = new Scanner(System.in);
+    int OP, C_PERS_KM,PERSONAS;
+    long P_FINAL;
+        System.out.println("Qué tipo de bus desea? A=1 ; B=2 ; C=3");
+        OP = key.nextInt();
+    switch (OP){
+        case 1: 
+            C_PERS_KM = 2000;
+            System.out.println("Cuántas personas viajarán?");
+            PERSONAS = key.nextInt();
+            if (PERSONAS>=20){
+                P_FINAL=C_PERS_KM*PERSONAS;
+                System.out.println("El Valor es: "+P_FINAL);
+                System.out.println("El Costo por persona es: "+P_FINAL/PERSONAS);
+            }
+            else{
+                P_FINAL=C_PERS_KM*20;
+                System.out.println("El Valor es: "+P_FINAL);
+                System.out.println("El Costo por persona es: "+P_FINAL/PERSONAS);
+            }    
+            break;
+            case 2: 
+            C_PERS_KM = 2500;
+            System.out.println("Cuántas personas viajarán?");
+            PERSONAS = key.nextInt();
+            if (PERSONAS>=20){
+                P_FINAL=C_PERS_KM*PERSONAS;
+                System.out.println("El Valor es: "+P_FINAL);
+                System.out.println("El Costo por persona es: "+P_FINAL/PERSONAS);
+            }
+            else{
+                P_FINAL=C_PERS_KM*20;
+                System.out.println("El Valor es: "+P_FINAL);
+                System.out.println("El Costo por persona es: "+P_FINAL/PERSONAS);
+            }    
+            break;
+            case 3: 
+            C_PERS_KM = 3000;
+            System.out.println("Cuántas personas viajarán?");
+            PERSONAS = key.nextInt();
+            if (PERSONAS>=20){
+                P_FINAL=C_PERS_KM*PERSONAS;
+                System.out.println("El Valor es: "+P_FINAL);
+                System.out.println("El Costo por persona es: "+P_FINAL/PERSONAS);
+            }
+            else{
+                P_FINAL=C_PERS_KM*20;
+                System.out.println("El Valor es: "+P_FINAL);
+                System.out.println("El Costo por persona es: "+P_FINAL/PERSONAS);
+            }    
+            break;
+            default: System.out.println("Opción no válida");
+            break;
+    }
+    }
+    
+}

@@ -1,0 +1,26 @@
+package burgers;
+import java.util.Scanner;
+public class Burgers {
+
+    public static void main(String[] args) {
+        Scanner key = new Scanner(System.in);
+        int P_BURGER=2000,CREDITO,C;
+        float P_FINAL,CARGO;
+        
+        System.out.println("Cuantas Hamburgesas quiere?");
+        C = key.nextInt();
+        System.out.println("Paga con tarjeta? 1=si 2=no");
+        CREDITO = key.nextInt();
+        if (CREDITO==1){
+            P_FINAL=C*P_BURGER;
+            CARGO=((P_FINAL*5)/100);
+            P_FINAL=P_FINAL+CARGO;
+            System.out.println("Valor Final es: "+P_FINAL);
+        }
+        else {
+            P_FINAL=C*P_BURGER;
+            System.out.println("Valor Final es: "+P_FINAL);
+        }
+    }
+    
+}

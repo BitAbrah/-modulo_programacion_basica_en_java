@@ -1,0 +1,49 @@
+package drlorenzo_javacode;
+import java.util.Scanner;
+public class DrLorenzo_JavaCode {
+
+    public static void main(String[] args) {
+      Scanner key = new Scanner(System.in);
+       int N_CITA,TARIFA_C;
+       float SUMAS, P_CITAS_ACUM;
+       
+        System.out.println("Ingrese el número de su cita");
+        N_CITA = key.nextInt();
+        if (N_CITA<=3){
+            TARIFA_C=20000;
+            P_CITAS_ACUM=TARIFA_C*N_CITA;
+            System.out.println("El Valor de su cita es: "+TARIFA_C);
+            System.out.println("Hasta ahora ha gastado: "+P_CITAS_ACUM);    
+        }
+        else{
+            if (N_CITA==4 || N_CITA==5){
+                TARIFA_C=15000;
+                SUMAS=20000*3;
+                N_CITA=N_CITA-3;
+                P_CITAS_ACUM=SUMAS+TARIFA_C*N_CITA;
+                System.out.println("El Valor de su cita es: "+TARIFA_C);
+                System.out.println("Hasta ahora ha gastado: "+P_CITAS_ACUM);   
+            }
+            else {
+                if (N_CITA>=6 && N_CITA<=8){
+                    TARIFA_C=10000;
+                    SUMAS=(20000*3)+(15000*2);
+                    N_CITA=N_CITA-5;
+                    P_CITAS_ACUM=SUMAS+TARIFA_C*N_CITA;
+                    System.out.println("El Valor de su cita es: "+TARIFA_C);
+                    System.out.println("Hasta ahora ha gastado: "+P_CITAS_ACUM);
+                }
+                else{
+                    TARIFA_C=5000;
+                    SUMAS=(20000*3)+(15000*2)+(10000*3);
+                    N_CITA=N_CITA-8;
+                    P_CITAS_ACUM=SUMAS+TARIFA_C*N_CITA;
+                    System.out.println("El Valor de su cita es: "+TARIFA_C);
+                    System.out.println("Hasta ahora ha gastado: "+P_CITAS_ACUM);
+                }
+                    
+            }
+        }
+    }
+    
+}

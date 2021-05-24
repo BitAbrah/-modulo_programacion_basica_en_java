@@ -1,0 +1,38 @@
+REGISTRO 17_05_2021
+
+Video para uso de Switch 
+
+https://www.youtube.com/watch?v=hBZO3josL4Q
+
+Para If Else
+
+https://www.youtube.com/watch?v=jGfB6UzG-6A
+
+ayuda para comparaciones %% y ||
+
+Hice los ejercicios Dr_Lorenzo - BusesABC y Burger en JAVA 
+Ejercicios con "if else"
+
+18_05_2021
+
+En seudo lenguaje no logré comprender el ejercicio chismefón
+pero pude realizarlo de forma optima en java luego de
+analizarlo y entenderlo correctamente logrando implementar 
+en aquel ejercicio la forma de selección switch en java
+
+19_05_2021
+
+Se logra mejor dominio de switch y ciclos iterativos.
+He logrado resolver de forma más rápida los ejercicios 
+en clases, implementado más dificultad por mi parte. 
+
+20_05_2021
+
+Se logran los objetivos de forma optima, aunque 
+con cierta dificultas ya que se requirieron mayor análisis 
+e investigación para poder resolverlos. 
+
+Enlaces para poder comprender parte del ejercicio de numeros mágicos
+
+http://funes.uniandes.edu.co/20512/1/Romero1996Numeros.pdf
+
