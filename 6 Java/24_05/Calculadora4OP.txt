@@ -1,0 +1,43 @@
+package calculadora4op;
+import java.util.Scanner;
+public class Calculadora4OP {
+
+    public static void main(String[] args) {
+      Scanner key = new Scanner(System.in);
+      int A,B,OP,S=1;
+        System.out.println("Mira, te explico:");
+        System.out.println("Ahora puedes seleccionar distintas operaciones");
+        System.out.println("Pero primero necesitamos ingresar los números:");
+        System.out.println("Ingrese primer número...");
+        A=key.nextInt();
+        System.out.println("Ahora ingrese el segundo...");
+        B=key.nextInt();
+        while (S==1){
+        System.out.println("Seleccione Operación");
+        System.out.println("1 Sumar");
+        System.out.println("2 Restar");
+        System.out.println("3 Multiplicar");
+        System.out.println("4 Dividir");
+        OP=key.nextInt();
+        switch (OP){
+            case 1:
+                System.out.println("La Suma es: "+(A+B));
+                break;
+            case 2:
+                System.out.println("La Resta es: "+(A-B));
+                break;
+            case 3:
+                System.out.println("La Multiplicación es: "+(A*B));
+                break;
+            case 4:
+                System.out.println("La División es: "+(A/B));
+                break;
+            default: System.out.println("Ingrese una opción válida porfa");
+        }
+            System.out.println("");
+            System.out.println("Desea seleccionar otra operación?");
+            System.out.println("1=Si 2=No");
+            S=key.nextInt();
+        } 
+    } 
+}

@@ -1,0 +1,46 @@
+package cajerobank;
+import java.util.Scanner;
+public class CajeroBank {
+
+    public static void main(String[] args) {
+        Scanner key = new Scanner(System.in);
+        int OP,a;
+        float ABONO,GIRO,SALDO=20000;
+        do {
+        System.out.println("Bienvenide a BANK! Su banque amigue: ");
+        System.out.println("Seleccione qué desea hacer ->");
+        System.out.println("1 = Consulta Saldo");
+        System.out.println("2 = Deposito o Abono");
+        System.out.println("3 = Giro");
+        OP=key.nextInt();
+        switch (OP) {
+            case 1:
+                System.out.println("Su saldo es: "+SALDO);
+                 System.out.println("");
+                break;
+            case 2:
+                System.out.println("Ingrese su depósito ->");
+                ABONO=key.nextFloat();
+                SALDO=SALDO+ABONO;
+                System.out.println("Su nuevo saldo es: "+SALDO);
+                 System.out.println("");
+                break;
+            case 3:
+                System.out.println("Cuanto desea retirar? ->");
+                GIRO=key.nextFloat();
+                if (SALDO>=GIRO){
+                SALDO=SALDO-GIRO;
+                System.out.println("Su nuevo saldo es: "+SALDO);
+                 System.out.println("");
+                }
+                else {System.out.println("¡Su saldo es insuficiente!");
+                System.out.println("Porfavor vuelva a intentarlo...");
+                }
+                break;
+            default: System.out.println("Por favor, ingese una operación válida");
+        }
+            System.out.println("Continuar? 1=Si 2=No");
+            a=key.nextInt();
+    }while (a==1);
+    }
+}

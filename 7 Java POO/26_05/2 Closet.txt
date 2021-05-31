@@ -1,0 +1,104 @@
+package clasepoo;
+import java.util.Scanner;
+public class Closet {
+    Scanner key=new Scanner(System.in);
+    
+    public String Calzado (){
+        int C;
+        System.out.println("Selecciona tu calzado:");
+        System.out.println("1=Running Azul 2=Zapatos Negros 3=Zico Celeste 4=Nike Verdes");
+        C=key.nextInt();
+        if (C==1){return "Running Azul";
+        } else {
+        if (C==2){return "Zapatos Negros";
+        } else {
+            if (C==3){return "Zico Celeste";
+            }
+        }
+    }
+        return "Nike Verdes";
+    }
+    public String Pantalones (){
+        int P;
+        System.out.println("Seleccione sus tolompas:");
+        System.out.println("1=Jogger Gris 2=Pantalon Negros 3=Bañador Celeste 4=Calzas de tu tía");
+        P=key.nextInt();
+        if (P==1){
+            return "Jogger Gris";
+        } else {
+            if (P==2){
+                return "Pantalon Negros";
+            } else {
+                if (P==3){
+                    return "Bañador Celeste";
+                }
+            }                
+        }
+        return "Calzas de tu tía";
+    }
+    public String Torso (){
+        int T;
+        System.out.println("Selecciones prendas para el torso:");
+        System.out.println("1=Poleron Rojo 2=Camisa Gris  3=Polera Blanca 4=Guayabera Chillona");
+        T=key.nextInt();
+        if (T==1){
+            return "Poleron Rojo";
+        } else {
+            if (T==2){
+                return "Camisa Gris";
+            } else {
+                if (T==3){
+                    return "Polera Blanca";
+                }
+            }                
+        }
+        return "Guayabera Chillona";
+    }
+    
+    public String Cabeza (){
+        int C;
+        System.out.println("Selecciona algo que te guste:");
+        System.out.println("1=Jockey Lackers 2=Gomina Gorila  3=Gafas de Sol 4=Sombrero Cotillón");
+        C=key.nextInt();
+        if (C==1){
+            return "Jockey Lackers";
+        } else {
+            if (C==2){
+                return "Gomina Gorila";
+            } else {
+                if (C==3){
+                    return "Gafas de Sol";
+                }
+            }                
+        }
+        return "Sombrero Cotillón";
+    }
+    public void Espejo (String A, String B ,String C,String D){
+        System.out.println("Bien, veamos qué te pusiste");
+        System.out.println("");
+        System.out.println(A);
+        System.out.println(B);
+        System.out.println(C);
+        System.out.println(D);
+        System.out.println("");
+        if (A.equals("Running Azul") && B.equals("Jogger Gris") && C.equals("Poleron Rojo") && D.equals("Jockey Lackers")){
+            System.out.println("Muy bien, nos vamos de deporte eh!");
+        } else {
+            if (A.equals("Zapatos Negros") && B.equals("Pantalon Negros") && C.equals("Camisa Gris") && D.equals("Gomina Gorila")){
+            System.out.println("¡Qué elegante!... tienes cita? Entrevista laboral?"
+                    + " Quieres sorprender? No importe... todo un guapetón xd");
+            } else {
+                if (A.equals("Zico Celeste") && B.equals("Bañador Celeste") && C.equals("Polera Blanca") && D.equals("Gafas de Sol")){
+            System.out.println("Mish.. usteh vive la vida.. too playa.. ¡Muy bien!");
+                    System.out.println("llevese una chela pal camino.. por si acaso");
+            } else{
+                    if (A.equals("Nike Verdes") && B.equals("Calzas de tu tía") && C.equals("Guayabera Chillona") && D.equals("Sombrero Cotillón")){
+            System.out.println("Eh... Usted es una persona extraña c:");
+                        System.out.println("Pero supongo que tiene sentido no?");
+                        System.out.println("Digo... no tienes por qué ponerte lo que diga el resto mientras tenga sentido para ti");
+            } else {System.out.println("Mmm.. creo que tu outfit no pega mucho... podrías intentarlo mejor a la próxima");}
+                }
+            }
+        }
+    }
+}

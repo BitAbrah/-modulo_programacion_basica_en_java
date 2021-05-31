@@ -1,0 +1,23 @@
+package horavalida;
+import java.util.Scanner;
+public class HoraValida {
+
+    public static void main(String[] args) {
+        Scanner key = new Scanner(System.in);
+        int H,M,S;
+        System.out.println("Indique hora");
+        H=key.nextInt();
+        System.out.println("Minutos");
+        M=key.nextInt();
+        System.out.println("Y segundos");
+        S=key.nextInt();
+        if (H<=24 && M<=60 && S<=60){
+            System.out.println("Sus números son una hora válida. Son las : "+H+":"+M+":"+S);
+        }
+        else {System.out.println("Sus números no son una hora válida");
+            System.out.println("El wn wn oh... dónde has visto una hora como esta? "
+                    + "... son las: "+H+":"+M+":"+S);
+        }
+    }
+    
+}

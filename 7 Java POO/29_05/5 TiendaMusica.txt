@@ -1,0 +1,130 @@
+package clasepoo;
+import java.util.Scanner;
+public class TiendaMusica {
+   String Instrumento;
+   String Tipo;
+   int Valor;
+   
+   public TiendaMusica () {     
+}
+   public String Mirar (){
+       int a;
+       Scanner key=new Scanner (System.in);
+       System.out.println("Seleccione qué tipo de instrumento necesita");
+       System.out.println("1 Guitar");
+       System.out.println("2 Bass");
+       System.out.println("3 Drums");
+       System.out.println("4 Keys");
+       int op;
+       op=key.nextInt();
+       switch (op){
+           case 1:
+               Tipo = "Guitarra";
+               System.out.println("¿Qué Guitarra le gustó?");
+               System.out.println("1=Fender 2=Takamine 3=Gibson 4=Rickenbacker");
+               a=key.nextInt();
+               switch (a){
+                   case 1:
+                       return Instrumento = "Fender";
+                   case 2:
+                       return Instrumento ="Takamine";
+                   case 3:
+                       return Instrumento ="Gibson";
+                   case 4:
+                       return Instrumento ="Rickenbacker";     
+               }
+               break;
+           case 2:
+               Tipo = "Bajo";
+               System.out.println("¿Qué Bajo le gustó?");
+               System.out.println("1=Ibanez 2=Ltd 3=Warwick 4=Gibson");
+               a=key.nextInt();
+               switch (a){
+                   case 1:
+                       return Instrumento ="Ibanez";
+                   case 2:
+                       return Instrumento ="Ltd";
+                   case 3:
+                       return Instrumento ="Warwick";
+                   case 4:
+                       return Instrumento ="Gibson";
+               }
+               break;
+           case 3:
+               Tipo = "Drums";
+               System.out.println("¿Qué Drums le gustó?");
+               System.out.println("1=Mapex 2=Tama 3=e-Yamaha 4=e-Alesis");
+               a=key.nextInt();
+               switch (a){
+                   case 1:
+                       return Instrumento ="Mapex";
+                   case 2:
+                       return Instrumento ="Tama";
+                   case 3:
+                       return Instrumento ="e-Yamaha";
+                   case 4:
+                       return Instrumento ="e-Alesis";
+               }
+               break;
+           case 4:
+               Tipo = "Sintetizador";
+               System.out.println("¿Qué Sintetizador le gustó?");
+               System.out.println("1=Arturia 2=Korg 3=Nord Stage 4=Moog");
+               a=key.nextInt();
+               switch (a){
+                   case 1:
+                       return Instrumento ="Arturia";
+                   case 2:
+                       return Instrumento ="Korg";
+                   case 3:
+                       return Instrumento ="Nord Stage";
+                   case 4:
+                       return Instrumento ="Moog";
+               }
+               break;
+           default: {System.out.println("Vuelva pronto");
+               return "";
+           }
+           }
+       return "";
+       }
+   
+        public int ConsultaValor(){
+        Scanner key=new Scanner (System.in);
+            System.out.println("El instrumento que ha visto es: "+Instrumento);
+        if (Tipo.equals("Guitarra")){
+            Valor=2000;
+        }
+        if (Tipo.equals("Bajo")){
+            Valor=1900;
+        }
+        if (Tipo.equals("Drums")){
+            Valor=3000;
+        }
+        if (Tipo.equals("Sintetizador")){
+            Valor=2500;
+        }
+        return Valor;
+    }
+        public void Pagar (){
+            Scanner key=new Scanner (System.in);
+            int pago;
+            System.out.println("Veamos qué tenemos por acá");
+            System.out.println("Su "+Tipo+" de Marca "+Instrumento);
+            System.out.println("Le vale: $"+Valor);
+            System.out.println("Ingrese con cuanto pagará");
+            pago=key.nextInt();
+            if (pago>=Valor){
+                System.out.println("Ha pagado con $"+pago);
+                System.out.println("Ha comprado su "+Tipo+" "+Instrumento);
+                System.out.println("Por $"+Valor); 
+                System.out.println("Su vuelto es: $"+(pago-Valor));
+                System.out.println("*Se entrega "+Tipo+" "+Instrumento+"*");
+            } else {
+                System.out.println("Por favor... necesita cancelar la totalidad del producto ");
+                System.out.println("de lo contraro no es posible realizar la compra.");
+            }
+            System.out.println("Gracias por preferirnos");
+            System.out.println("Vuelva pronto");
+        }    
+   }

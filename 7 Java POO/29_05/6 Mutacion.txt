@@ -1,0 +1,34 @@
+package clasepoo;
+
+public class Mutacion {
+    private String TipoVacuna;
+    private int Dosis;
+    private String Poder;
+    private String Cepa;
+
+    //Constructor 1
+    public Mutacion (){
+        
+    }
+    
+    //Constructor 2
+    public Mutacion (String TipoVacuna, int Dosis){
+        this.TipoVacuna = TipoVacuna;
+        this.Dosis = Dosis; 
+    }
+    
+    public void setTipoVacuna (String TipoVacuna){
+        this.TipoVacuna = TipoVacuna;
+    }
+    public String getTipoVacuna (){
+        return TipoVacuna;
+    }
+    public void setDosis (int Dosis){
+        this.Dosis = Dosis;
+    }
+    public int getDosis (){
+        return Dosis;
+    }
+}
+
+

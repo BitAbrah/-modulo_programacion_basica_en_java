@@ -1,0 +1,89 @@
+package clasepoo;
+
+//import java.util.Scanner;
+
+public class ClasePOO {
+
+    public static void main(String[] args) {
+
+	// Clase MamaXD
+        /* MamaXD M1=new MamaXD();
+        System.out.println("");
+        M1.llamarMama();
+        System.out.println("");
+        System.out.println("Recibes: $"+M1.PedirPlata());
+        System.out.println("");
+        M1.Acariciar(); */
+
+	
+        // Clase Closet
+        /*String CZ,PT,TR,CB;
+        Closet C1=new Closet();
+        System.out.println("Vamos a sacar lo necesario del Closet");
+        System.out.println("Primero pa los pies wei");
+        System.out.println("");
+        CZ=C1.Calzado();
+        System.out.println("Te pusiste "+CZ);
+        System.out.println("");
+        System.out.println("Ahora para cubrir las partes nobles");
+        System.out.println("");
+        PT=C1.Pantalones();
+        System.out.println("Te pusiste "+PT);
+        System.out.println("");
+        System.out.println("Qué tal algo para taparte la panza? iuug");
+        System.out.println("");
+        TR=C1.Torso();
+        System.out.println("Te pusiste "+TR);
+        System.out.println("");
+        System.out.println("Quizás un accesorio podría ayudarte... qué te parece lo siguiente?:");
+        CB=C1.Cabeza();
+        System.out.println("Te pusiste "+CB);
+        System.out.println("");
+        System.out.println("Chequemos qué tan monono quedaste bb");
+        C1.Espejo(CZ, PT, TR, CB);*/
+        
+
+	// Clase Calculator
+        // Ahora pa hacer simple esto... haremos una calruladora :v
+        /*System.out.println("Vamos a hacer algunos calculos...");
+        Calculator CAL = new Calculator();
+        Scanner key = new Scanner (System.in);
+        int a=1,op;
+        do{
+            System.out.println("Seleccione:");
+            System.out.println("1=Sumar");
+            System.out.println("2=Restar");
+            System.out.println("3=Multiplicar");
+            System.out.println("4=Dividir");
+            op=key.nextInt();
+            switch (op){
+                case 1: CAL.Suma();
+                    break;
+                case 2: CAL.Resta();
+                    break;
+                case 3:CAL.Multiplicacion();
+                    break;
+                case 4: CAL.Division();
+                    break;
+                default: System.out.println("Ponga una opción válida");
+            }
+        System.out.println("Seguir? 1=Si 2=No");
+        a=key.nextInt();
+        } while (a==1);
+        System.out.println("¡Qué le vaya bonito!");*/
+        
+        TiendaMusica T1=new TiendaMusica();
+        String I;
+        I=T1.Mirar();
+        System.out.println("Usted ha mirado lo siguiente... "+I);
+        System.out.println("");
+        System.out.println("Consultamos precio");
+        System.out.println("");
+        int P=T1.ConsultaValor();
+        System.out.println("El valor es: "+P);
+        System.out.println("");
+        System.out.println("Ahora vamos a la caja");
+        T1.Pagar();
+    }
+}
+

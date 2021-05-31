@@ -1,0 +1,61 @@
+package clasepoo;
+import java.util.Scanner;
+public class Calculator {
+
+    public Calculator (){
+	}
+    
+    public void Suma (){
+        Scanner key=new Scanner (System.in);
+        int c,n,s=0;
+        System.out.println("Ingrese cantidad de números");
+        c=key.nextInt();
+        for (int i=1;i<=c;i++){
+            System.out.println("Ingrese numero "+i);
+            n=key.nextInt();
+            s=s+n;
+        }
+        System.out.println("Su suma es: "+s);
+    }
+    public void Resta (){
+        Scanner key=new Scanner (System.in);
+        int c,n,r=0;
+        System.out.println("Ingrese cantidad de números");
+        c=key.nextInt();
+        for (int i=1;i<=c;i++){
+            System.out.println("Ingrese numero "+i);
+            n=key.nextInt();
+            if (i==1){ r=n;}
+            else {
+            r=r-n;}
+        }
+        System.out.println("Su resta es: "+r);
+    }
+    public void Multiplicacion (){
+        Scanner key=new Scanner (System.in);
+        int c,n,m=1;
+        System.out.println("Ingrese cantidad de números");
+        c=key.nextInt();
+        for (int i=1;i<=c;i++){
+            System.out.println("Ingrese numero "+i);
+            n=key.nextInt();
+            m=m*n;
+        }
+        System.out.println("Su Multiplicación es: "+m);
+    }
+    public void Division (){
+        Scanner key=new Scanner (System.in);
+        int c,n;
+        double d=0;
+        System.out.println("Ingrese cantidad de números");
+        c=key.nextInt();
+        for (int i=1;i<=c;i++){
+            System.out.println("Ingrese numero "+i);
+            n=key.nextInt();
+            if (i==1){ d=n;}
+            else {
+            d=d/n;}
+        }
+        System.out.println("La división es: "+d);
+    }
+}

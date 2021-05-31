@@ -1,0 +1,23 @@
+package numerodelasuerte;
+import java.util.Scanner;
+public class NumeroDeLaSuerte {
+
+    public static void main(String[] args) {
+         Scanner key = new Scanner(System.in);
+        int DIA,MES,AÑO,SUM,SUMAFINAL=0;
+        System.out.println("Ahoras calcularemos el numeros de la suerte"
+                + "sutos... así que ingrese lo siguientes:");
+        System.out.println("Día en que nació usted: ");
+        DIA=key.nextInt();
+        System.out.println("Ahora su mes: ");
+        MES=key.nextInt();
+        System.out.println("Y por último su año de nacimientos");
+        AÑO=key.nextInt();
+        SUM=DIA+MES+AÑO;
+        for (int i=1;i<=4;i++){
+            SUMAFINAL=SUMAFINAL+(SUM%10);
+            SUM=SUM/10;
+        }
+        System.out.println("Su numero de la suerte es: "+SUMAFINAL);
+    }
+}

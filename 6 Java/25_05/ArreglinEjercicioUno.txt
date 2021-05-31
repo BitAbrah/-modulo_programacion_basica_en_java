@@ -1,0 +1,22 @@
+package arreglinejerciciouno;
+import java.util.Scanner;
+public class ArreglinEjercicioUno {
+
+    public static void main(String[] args) {
+        Scanner key = new Scanner(System.in);
+        int C;
+        System.out.println("Indique valor arreglo->");
+        C=key.nextInt();
+        int [] cajonera = new int[C];
+        for (int i=0;i<cajonera.length ;i++ ){
+            System.out.println("Dele un valor an numero: "+(i+1));
+            cajonera[i]=key.nextInt();
+        }
+        System.out.println("Los números que ingresó son");
+        for (int i=0;i<cajonera.length ;i++ ){
+            System.out.println(cajonera [i]);
+        }
+        
+    }
+    
+}

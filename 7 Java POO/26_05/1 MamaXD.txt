@@ -1,0 +1,50 @@
+package clasepoo;
+import java.util.Scanner;
+public class MamaXD {
+    
+    public void llamarMama(){
+        Scanner key=new Scanner(System.in);
+        int R;
+        System.out.println("Hola... te acortaste que tenías mamá!");
+        System.out.println("1=Si 2=No");
+        R=key.nextInt();
+        if (R==2){
+            System.out.println("Seguro que no po... ya ya.. si toy comprando");
+            System.out.println("Te llamo después.. ");
+        } else {
+            System.out.println("A me querí agarrar pa la chacota...");
+            System.out.println("Ya sabí que estoy super ocupá.. hablamos después");
+        }
+    }
+    public long PedirPlata (){
+        Scanner key=new Scanner(System.in);
+        System.out.println("Hola hije.. ya sé pa qué me querí");
+        System.out.println("Si la intuición de mamá no falla po niñe");
+        System.out.println("Ya mi amor.. cuanto necesita?");
+        long plata=key.nextLong();
+        return plata;
+    }
+    public void Acariciar(){
+        Scanner key=new Scanner(System.in);
+        System.out.println("???");
+        System.out.println("Ya.. qué te pasó?");
+        System.out.println("Dime qué te está pasando.. si es muy raro "
+                + "que le hagai cariño a tu vieja");
+        System.out.println("1=Nada 2=Me eché un ramo");
+        int R=key.nextInt();
+        if (R==1){
+            System.out.println("Venga pa acá ");
+            System.out.println("No te creo mucho.. pero venga a regalonear"
+                    + " con su viejita...");
+            System.out.println("*Te mira con cara de incrédula*");
+        } else {
+            System.out.println("Noooo.. esto es una broma!!");
+            System.out.println("No podí farriartela po hije...");
+            System.out.println("Ya.. ya nomas.. ven pa acá... ven pa acá");
+            System.out.println("*te persigue con la Chancla*");
+            System.out.println("*Te da un chanclazo en la frente*");
+            System.out.println("*Te desmayas*");
+        }
+    }
+    
+}
