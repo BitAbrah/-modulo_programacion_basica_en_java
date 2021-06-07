@@ -1,0 +1,37 @@
+package ejerciciocontador;
+
+public class Contador {
+    private int cont;
+    
+    public Contador (){
+        
+    }
+    public Contador (int cont){
+        if (cont<0){
+            cont =0;
+        } else{
+        this.cont=cont;
+        }
+    }
+    public void setCont (int cont){
+        if (cont<0){
+            cont =0;
+        } else{
+        this.cont=cont;
+        }
+    }
+    public int getCont(){
+        return cont;
+    }
+    
+    public int Aumentar (){
+        return cont++;
+    }
+    
+    public int Decrementar (){
+        if (cont--<=0){
+            return cont =0;}
+        else {
+        return cont--;}
+    }
+}

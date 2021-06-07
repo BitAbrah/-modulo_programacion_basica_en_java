@@ -1,0 +1,31 @@
+package pasajeromain;
+import java.util.Scanner;
+public class PasajeroMain {
+
+    public static void main(String[] args) {
+        int ValorPasaje,Saldo;
+       String NombreEstacion;
+       String NombrePasajero;
+       Scanner key=new Scanner (System.in);
+       
+       Pasajero P2=new Pasajero ();
+        System.out.println("Ponremos el valor del pasaje");
+        ValorPasaje = key.nextInt();
+      
+        System.out.println("Ingrese el saldo de su tarjeta: -->");
+        Saldo=key.nextInt();
+        System.out.println("Su saldo es "+Saldo);
+        
+        System.out.println("Ahora tomaremos el tren");
+        System.out.println("...");
+        P2.setSaldo(Saldo);
+      
+        System.out.println("Debemos ir al torniquete");
+        System.out.println("...");
+      
+        System.out.println("Pasamos nuestra tarjeta...");
+       
+        P2.PasarTarjeta3(ValorPasaje);
+    }
+    
+}

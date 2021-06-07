@@ -1,0 +1,68 @@
+package bibliotecamain;
+import java.util.Scanner;
+import java.util.ArrayList;
+public class BibliotecaMain {
+
+    public static void main(String[] args) {
+        Scanner key=new Scanner (System.in);
+        ArrayList<Libro> libro = new ArrayList<Libro>();
+        String nombre, autor;
+       int ejemp,prest;
+       int a=1;
+       do {
+        System.out.println("Nombre del Libro...");
+        nombre=key.nextLine();
+        System.out.println("Autor...");
+        autor=key.nextLine();
+        System.out.println("Cuantos hay...");
+        ejemp=key.nextInt();
+        System.out.println("Cuantos prestó...");
+        prest=key.nextInt();
+
+        libro.add(new Libro(nombre, autor, ejemp, prest));
+        
+        System.out.println("");
+        System.out.println("Otro Librito? 1=Si 2=No");
+        a=key.nextInt();
+        key.nextLine();
+       } while (a==1);
+        a=1;
+       int op,l;
+       do {
+        System.out.println("Seleccione opción");
+        System.out.println("1-Ver Libros");
+        System.out.println("2-Prestar");
+        System.out.println("3-Devolver");
+        op=key.nextInt();
+           switch (op){
+               case 1:
+                   for (int i=0;i<libro.size();i++){
+                       System.out.println(i+" - Nombre Libro: "+libro.get(i).getNombre());
+                       System.out.println("Autor: "+libro.get(i).getAutor());
+                       System.out.println("Cantidad en Biblioteca: "+libro.get(i).getEjemplares());
+                       System.out.println("Prestados: "+libro.get(i).getPrestados());
+                   }
+                   break;
+               case 2:
+                   System.out.println("Qué libro desea llevar?");
+                   for (int i=0;i<libro.size();i++){
+                       System.out.println(i+" - Nombre Libro: "+libro.get(i).getNombre());
+                   }
+                   l=key.nextInt();
+                   libro.get(l).Prestar();
+                   break;
+               case 3:
+                   System.out.println("Qué libro trae devuelta?");
+                   for (int i=0;i<libro.size();i++){
+                       System.out.println(i+" - Nombre Libro: "+libro.get(i).getNombre());
+                   }
+                   l=key.nextInt();
+                   libro.get(l).Devolver();
+                   break;
+               default: System.out.println("Seleccione opción válida");
+           }
+           System.out.println("Desea continuar? 1=Si 2=No");
+           a=key.nextInt();
+       }while (a==1);
+    }
+}

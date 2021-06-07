@@ -1,0 +1,22 @@
+package ejerciciocontador;
+//import java.util.Scanner;
+public class EjercicioContador {
+
+    public static void main(String[] args) {
+        //Scanner key=new Scanner (System.in);
+        
+       Contador C1=new Contador(-1);
+       System.out.println(""+C1.getCont());
+       C1.setCont(-3);
+        System.out.println(""+C1.getCont());
+       for (int i=1;i<4;i++){
+           System.out.println("Valor Final "+C1.Aumentar());
+       }
+       System.out.println(""+C1.getCont());
+       for (int i=4;i>=-1;i--){
+            System.out.println(C1.Decrementar());
+       }
+        System.out.println("Valor Final "+C1.getCont());
+    }
+    
+}
