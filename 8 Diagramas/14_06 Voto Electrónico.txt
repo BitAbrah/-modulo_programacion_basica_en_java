@@ -1,0 +1,27 @@
+Voto Electrónico 
+
+Descripción: 
+
+En las últimas votaciones de gobernadores regionales este 13 de Junio de 2021 la participación de los votantes ha ascendido a la gloriosa cantidad del 19% de votantes, del total que estaban habilitados para hacer uso del sufragio. 
+Se apela a que "los jóvenes son flojos", "los cabros no participan", a que "el voto debe ser obligatorio" y un largo etc. Pero también estas votaciones se vieron mermadas por una alsa en los casos de infección por el virus del COVID que ha obligado a las autoridades del área de la salud a nuevamente implementar cuarentenas en toda la región. 
+
+Hoy por hoy, la digitalización se ha vuelto cada vez más ncesaria tanto para abastecerse de alimentos, como para adquirir todo tipo de productos, en los que la acreditación de la identidad pasa a ser obvia, en el sentido de que es fácil autentificar al comprador para ir a dejar los productos incluso desde países tan lejanos como China. 
+
+Pero ¿qué pasa con los sitemas de voto? ¿Qué pasa con la autentificción de identidad al sacar un salvoconducto en comisaría virtual? ¿La autentificación para adquirir los bonos IFE? ó ¿Pedir los retiros del 10%?. 
+Es posible que con la cantidad de información que maneja Servel, y que se ha visto en las últimas votaciones, la autentificación de identidad para realizar un voto no se vea quebrantada ante posibles fraudes en estos casos? 
+
+Si bien, el voto es secreto.. es necesario disponer de nuevas herramientas para realizarlo y en el que se pueda hacer partícipe a todo el mundo involucrado, es decir, tanto a los jóvenes, a los infectados por alguna pandemia e incluso a chilenos en el extranjero, que deseando hacer uso de su voto, no pueden ejercerlo por estar en tierras lejanas. 
+
+¿Qué se propone?
+
+Un sistema de identificación para poder autentificar la votación o el acto del sufragio, y voto encriptado.
+
+Se propone para casos de identificación digital en Chile aplicar Clave Única, que ha sido bastante eficiente, tanto para pedido de salvoconductos, como para hacer tramites que ayuden a las familias como es el caso del bono IFE. 
+Además de eso, autentificar tu voto con el número del documento identificatorio en cada carnet chileno, y como el smartphone es un dispositivo que se utiliza en casi toda la población chilena, hacer uso del teléfono con clave de identificación enviada al momento de la autentificación del voto. 
+Además como medida opcional (entendiendo que no todos cuentan con dicha tecnología) hacer uso del reconocimiento facial que integran muchos teléfonos inteligentes. 
+
+Con estas 4 medidas es posible identificarse de forma correcta para aplicar un voto electrónico. 
+
+Por otra parte, se plantea hacer uso de un voto encriptado, que solo podrían develar los vocales digitales, para contabilizar el voto de forma anónima y de esta forma asegurar que cada voto, siga siendo un voto secreto. 
+
+
